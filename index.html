@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-history">
+            <h2>Card History</h2>
+            <div id="historyList"></div>
+        </div>
+        
+        <div class="main-content">
+            <div class="card-area">
+                <!-- Card Deck -->
+                <div class="card-deck">
+                    <div class="deck-top"></div>
+                    <div class="deck-middle"></div>
+                    <div class="deck-bottom"></div>
+                </div>
+
+                <!-- Generated Card -->
+                <div class="card-display">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <span class="card-value"></span>
+                                <span class="card-suit"></span>
+                            </div>
+                            <div class="card-back">
+                                <div class="pattern"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <button id="generateBtn" class="generate-btn">
+                Generate Card
+                <span class="btn-shine"></span>
+            </button>
+
+            <!-- Loading Animation -->
+            <div class="loading-animation">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="reset-area">
+            <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="squidGameSound" preload="auto">
+        <source src="sounds/squid-game.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="blingSound" preload="auto">
+        <source src="sounds/bling.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
