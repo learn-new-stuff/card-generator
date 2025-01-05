@@ -16,5 +16,8 @@ A beautiful and interactive card generator with animations and sound effects. Fe
 ## Technologies Used
 - HTML5
 - CSS3
-- JavaScript
-"# card-generator" 
+- JavaScript (ES6+)
+- GitHub Pages
+
+## Live Demo
+Visit the live demo at: https://[your-github-username].github.io/card-generator
